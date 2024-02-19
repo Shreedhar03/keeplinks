@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    background-color: #212123;
+    color: #cecece;
+}
+
+section {
+    width: 300px;
+    padding: 16px;
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+section div p {
+    width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    outline: none;
+    border: 0;
+    background-color: #cecece;
+    color: #212123;
+    padding: 4px 6px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.success{
+    background-color: #039330;
+    color: #fff;
+}
+form{
+    padding: 16px;
+}
+input{
+    background-color: inherit;
+    color: #cecece;
+    border: 1px solid #cecece;
+    outline: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    width: 100%;
+}
+input:focus{
+    outline: none;
+}

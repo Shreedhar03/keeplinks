@@ -1,0 +1,23 @@
+{
+    "name": "KeepLinks",
+    "description": "Easy access to your social links for seamless form filling",
+    "version": "1.0.1",
+    "manifest_version": 3,
+    "icons": {
+        "128": "logo.png"
+    },
+    "background": {
+        "service_worker": "sw.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup":"index.html"
+    },
+    "permissions":[
+        "scripting",
+        "tabs"
+    ],
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
