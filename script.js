@@ -5,11 +5,11 @@ function addEventToBtns() {
         btn.addEventListener("click", () => {
             const test = btn.parentElement.querySelector('p').innerText
             navigator.clipboard.writeText(test).then(() => {
-                btn.innerText = "Copied"
-                btn.classList.add("success")
+                btn.innerText = "done"
+                // btn.classList.add("success")
                 setTimeout(() => {
-                    btn.innerText = "Copy"
-                    btn.classList.remove("success")
+                    btn.innerText = "content_copy"
+                    // btn.classList.remove("success")
                 }, 1000);
 
             }).catch(() => {
@@ -36,12 +36,12 @@ function addNewLink(e) {
     const newP = document.createElement('p');
     newP.textContent = inputValue;
     // alert(newP.textContent)
-    const newCopyBtn = document.createElement('button');
-    newCopyBtn.classList.add('copy-btn');
-    newCopyBtn.textContent = 'Copy';
-    const newDeleteBtn = document.createElement('button');
-    newDeleteBtn.classList.add('delete-btn');
-    newDeleteBtn.textContent = 'Delete';
+    const newCopyBtn = document.createElement('span');
+    newCopyBtn.classList.add('material-symbols-outlined', 'copy-btn');
+    newCopyBtn.textContent = 'content_copy';
+    const newDeleteBtn = document.createElement('span');
+    newDeleteBtn.classList.add('material-symbols-outlined', 'delete-btn');
+    newDeleteBtn.textContent = 'delete';
 
     newDiv.appendChild(newP);
     newDiv.appendChild(newCopyBtn);
@@ -71,13 +71,13 @@ function loadLinks() {
         const newP = document.createElement('p');
         newP.textContent = link;
 
-        const newCopyBtn = document.createElement('button');
-        newCopyBtn.classList.add('copy-btn');
-        newCopyBtn.textContent = 'Copy';
+        const newCopyBtn = document.createElement('span');
+        newCopyBtn.classList.add('material-symbols-outlined', 'copy-btn');
+        newCopyBtn.textContent = 'content_copy';
 
-        const newDeleteBtn = document.createElement('button');
-        newDeleteBtn.classList.add('delete-btn');
-        newDeleteBtn.textContent = 'Delete';
+        const newDeleteBtn = document.createElement('span');
+        newDeleteBtn.classList.add('material-symbols-outlined', 'delete-btn');
+        newDeleteBtn.textContent = 'delete';
 
         newDiv.appendChild(newP);
         newDiv.appendChild(newCopyBtn);

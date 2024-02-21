@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -17,6 +17,9 @@ body {
 section {
     width: 300px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px   ;
 }
 
 section div {
@@ -24,12 +27,17 @@ section div {
     align-items: center;
     justify-content: space-between;
     padding: 6px;
+    gap: 8px;
+    background-color: #313136;
+    border-radius: 8px;
 }
 
 section div p {
     width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
 }
 
 button {
@@ -59,4 +67,9 @@ input{
 }
 input:focus{
     outline: none;
+}
+.material-symbols-outlined{
+    font-size: 20px;
+    color: #cecece;
+    cursor: pointer;
 }
